@@ -1,0 +1,217 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "TechVPN API",
+    "description": "The TechVPN API provides access to functionalities of the techvpn.cloud VPN browser extension, allowing users to connect swiftly without the need for accounts, ads, or data collection. It offers features based on the WireGuard protocol for secure and fast VPN connections.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/techvpn"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.techvpn.cloud",
+      "description": "TechVPN API Server"
+    }
+  ],
+  "paths": {
+    "/api/extension/servers": {
+      "get": {
+        "summary": "Get proxy list",
+        "description": "Retrieves a list of available VPN proxy servers for the TechVPN extension. Returns server information including locations and connection details.",
+        "operationId": "getProxyList",
+        "tags": [
+          "Servers"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved proxy server list",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "servers": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the server"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Display name of the server"
+                          },
+                          "country": {
+                            "type": "string",
+                            "description": "Country where the server is located"
+                          },
+                          "countryCode": {
+                            "type": "string",
+                            "description": "ISO country code"
+                          },
+                          "city": {
+                            "type": "string",
+                            "description": "City where the server is located"
+                          },
+                          "ip": {
+                            "type": "string",
+                            "description": "Server IP address"
+                          },
+                          "port": {
+                            "type": "integer",
+                            "description": "Server port number"
+                          },
+                          "protocol": {
+                            "type": "string",
+                            "description": "VPN protocol used (e.g., WireGuard)",
+                            "example": "WireGuard"
+                          },
+                          "publicKey": {
+                            "type": "string",
+                            "description": "Public key for WireGuard connection"
+                          },
+                          "load": {
+                            "type": "number",
+                            "description": "Current server load percentage"
+                          },
+                          "premium": {
+                            "type": "boolean",
+                            "description": "Whether the server requires premium access"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid parameters",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Server": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the server"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the server"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country where the server is located"
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "ISO country code"
+          },
+          "city": {
+            "type": "string",
+            "description": "City where the server is located"
+          },
+          "ip": {
+            "type": "string",
+            "description": "Server IP address"
+          },
+          "port": {
+            "type": "integer",
+            "description": "Server port number"
+          },
+          "protocol": {
+            "type": "string",
+            "description": "VPN protocol used (e.g., WireGuard)",
+            "example": "WireGuard"
+          },
+          "publicKey": {
+            "type": "string",
+            "description": "Public key for WireGuard connection"
+          },
+          "load": {
+            "type": "number",
+            "description": "Current server load percentage"
+          },
+          "premium": {
+            "type": "boolean",
+            "description": "Whether the server requires premium access"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message describing what went wrong"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Servers",
+      "description": "Operations related to VPN server management and retrieval"
+    }
+  ],
+  "externalDocs": {
+    "description": "TechVPN API Documentation on GitHub",
+    "url": "https://github.com/l0v3m0n3y/techvpn"
+  }
+}

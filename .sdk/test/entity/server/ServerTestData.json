@@ -1,0 +1,61 @@
+{
+  "existing": {
+    "server": {
+      "SERVER00": {
+        "city": "s6e",
+        "country": "s6f",
+        "country_code": "s70",
+        "id": "SERVER00",
+        "ip": "s72",
+        "load": 115,
+        "name": "s74",
+        "port": "s75",
+        "premium": true,
+        "protocol": "s77",
+        "public_key": "s78"
+      },
+      "SERVER01": {
+        "city": "sdc",
+        "country": "sdd",
+        "country_code": "sde",
+        "id": "SERVER01",
+        "ip": "se0",
+        "load": 225,
+        "name": "se2",
+        "port": "se3",
+        "premium": true,
+        "protocol": "se5",
+        "public_key": "se6"
+      },
+      "SERVER02": {
+        "city": "s14a",
+        "country": "s14b",
+        "country_code": "s14c",
+        "id": "SERVER02",
+        "ip": "s14e",
+        "load": 335,
+        "name": "s150",
+        "port": "s151",
+        "premium": true,
+        "protocol": "s153",
+        "public_key": "s154"
+      }
+    }
+  },
+  "new": {
+    "server": {
+      "server_ref01": {
+        "city": "s1b8",
+        "country": "s1b9",
+        "country_code": "s1ba",
+        "ip": "s1bc",
+        "load": 445,
+        "name": "s1be",
+        "port": "s1bf",
+        "premium": true,
+        "protocol": "s1c1",
+        "public_key": "s1c2"
+      }
+    }
+  }
+}

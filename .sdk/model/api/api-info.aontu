@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/techvpn"
+      }
+      description: "The TechVPN API provides access to functionalities of the techvpn.cloud VPN browser extension, allowing users to connect swiftly without the need for accounts, ads, or data collection. It offers features based on the WireGuard protocol for secure and fast VPN connections."
+      servers: [
+        {
+          description: "TechVPN API Server"
+          url: "https://api.techvpn.cloud"
+        }
+      ]
+      summary: "The TechVPN API provides access to functionalities of the techvpn.cloud VPN browser extension, allowing users to connect swiftly without the need for accounts, ads, or data collection."
+      title: "TechVPN API"
+      version: "1.0.0"
+      website: "https://github.com/l0v3m0n3y/techvpn"
+    }
+  }
+}
+
