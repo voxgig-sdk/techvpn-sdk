@@ -8,6 +8,7 @@ guide: {
   entity: server: {
     path: "/api/extension/servers": {
       op: list: method: *GET
+      op: list: transform: res: *("`body.servers`")|top
     }
   }
 

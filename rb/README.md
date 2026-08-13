@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = TechvpnSDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 server = client.Server.list()
 puts server
 ```
@@ -238,7 +239,7 @@ returns a result `Hash` with these keys:
 | --- | --- |
 | `city` |  |
 | `country` |  |
-| `country_code` |  |
+| `countryCode` |  |
 | `id` |  |
 | `ip` |  |
 | `load` |  |
@@ -246,7 +247,7 @@ returns a result `Hash` with these keys:
 | `port` |  |
 | `premium` |  |
 | `protocol` |  |
-| `public_key` |  |
+| `publicKey` |  |
 
 Operations: List.
 
@@ -273,7 +274,7 @@ Create an instance: `server = client.Server`
 | --- | --- | --- |
 | `city` | `String` |  |
 | `country` | `String` |  |
-| `country_code` | `String` |  |
+| `countryCode` | `String` |  |
 | `id` | `String` |  |
 | `ip` | `String` |  |
 | `load` | `Float` |  |
@@ -281,7 +282,7 @@ Create an instance: `server = client.Server`
 | `port` | `Integer` |  |
 | `premium` | `Boolean` |  |
 | `protocol` | `String` |  |
-| `public_key` | `String` |  |
+| `publicKey` | `String` |  |
 
 #### Example: List
 

@@ -16,7 +16,7 @@ main: kit: entity: server: {
       type: "`$STRING`"
     }
     {
-      name: "country_code"
+      name: "countryCode"
       req: false
       type: "`$STRING`"
     }
@@ -56,7 +56,7 @@ main: kit: entity: server: {
       type: "`$STRING`"
     }
     {
-      name: "public_key"
+      name: "publicKey"
       req: false
       type: "`$STRING`"
     }
@@ -82,7 +82,7 @@ main: kit: entity: server: {
           ]
           transform: {
             req: "`reqdata`"
-            res: "`body`"
+            res: "`body.servers`"
           }
         }
       ]

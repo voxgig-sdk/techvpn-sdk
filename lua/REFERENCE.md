@@ -92,7 +92,7 @@ local server = client:Server(nil)
 | --- | --- | --- | --- |
 | `city` | `string` | No |  |
 | `country` | `string` | No |  |
-| `country_code` | `string` | No |  |
+| `countryCode` | `string` | No |  |
 | `id` | `string` | No |  |
 | `ip` | `string` | No |  |
 | `load` | `number` | No |  |
@@ -100,7 +100,7 @@ local server = client:Server(nil)
 | `port` | `number` | No |  |
 | `premium` | `boolean` | No |  |
 | `protocol` | `string` | No |  |
-| `public_key` | `string` | No |  |
+| `publicKey` | `string` | No |  |
 
 ### Operations
 

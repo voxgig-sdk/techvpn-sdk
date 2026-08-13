@@ -16,7 +16,7 @@
 # @!attribute [rw] country
 #   @return [String, nil]
 #
-# @!attribute [rw] country_code
+# @!attribute [rw] countryCode
 #   @return [String, nil]
 #
 # @!attribute [rw] id
@@ -40,12 +40,12 @@
 # @!attribute [rw] protocol
 #   @return [String, nil]
 #
-# @!attribute [rw] public_key
+# @!attribute [rw] publicKey
 #   @return [String, nil]
 Server = Struct.new(
   :city,
   :country,
-  :country_code,
+  :countryCode,
   :id,
   :ip,
   :load,
@@ -53,7 +53,7 @@ Server = Struct.new(
   :port,
   :premium,
   :protocol,
-  :public_key,
+  :publicKey,
   keyword_init: true
 )
 
@@ -65,7 +65,7 @@ Server = Struct.new(
 # @!attribute [rw] country
 #   @return [String, nil]
 #
-# @!attribute [rw] country_code
+# @!attribute [rw] countryCode
 #   @return [String, nil]
 #
 # @!attribute [rw] id
@@ -89,12 +89,12 @@ Server = Struct.new(
 # @!attribute [rw] protocol
 #   @return [String, nil]
 #
-# @!attribute [rw] public_key
+# @!attribute [rw] publicKey
 #   @return [String, nil]
 ServerListMatch = Struct.new(
   :city,
   :country,
-  :country_code,
+  :countryCode,
   :id,
   :ip,
   :load,
@@ -102,7 +102,7 @@ ServerListMatch = Struct.new(
   :port,
   :premium,
   :protocol,
-  :public_key,
+  :publicKey,
   keyword_init: true
 )
 

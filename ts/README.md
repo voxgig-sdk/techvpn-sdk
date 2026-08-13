@@ -35,7 +35,9 @@ const client = new TechvpnSDK()
 
 ### 2. List server records
 
-`list()` resolves to an array of Server objects — iterate it directly:
+`list()` resolves to an array of Server ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const servers = await client.Server().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = TechvpnSDK.test()
 
 const server = await client.Server().list()
-// server is a bare entity populated with mock response data
+// server is the entity, populated with mock response data
+// — call server.data() for the record itself
 console.log(server)
 ```
 
@@ -286,7 +289,7 @@ The `prepare()` method returns:
 | --- | --- |
 | `city` |  |
 | `country` |  |
-| `country_code` |  |
+| `countryCode` |  |
 | `id` |  |
 | `ip` |  |
 | `load` |  |
@@ -294,7 +297,7 @@ The `prepare()` method returns:
 | `port` |  |
 | `premium` |  |
 | `protocol` |  |
-| `public_key` |  |
+| `publicKey` |  |
 
 Operations: list.
 
@@ -321,7 +324,7 @@ Create an instance: `const server = client.Server()`
 | --- | --- | --- |
 | `city` | `string` |  |
 | `country` | `string` |  |
-| `country_code` | `string` |  |
+| `countryCode` | `string` |  |
 | `id` | `string` |  |
 | `ip` | `string` |  |
 | `load` | `number` |  |
@@ -329,7 +332,7 @@ Create an instance: `const server = client.Server()`
 | `port` | `number` |  |
 | `premium` | `boolean` |  |
 | `protocol` | `string` |  |
-| `public_key` | `string` |  |
+| `publicKey` | `string` |  |
 
 #### Example: List
 

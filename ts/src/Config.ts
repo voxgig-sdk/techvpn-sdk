@@ -21,7 +21,7 @@ class Config {
 
 
   main = {
-    name: 'ProjectName',
+    name: 'Techvpn',
   }
 
 
@@ -70,7 +70,7 @@ class Config {
         },
         {
           "active": true,
-          "name": "country_code",
+          "name": "countryCode",
           "req": false,
           "type": "`$STRING`",
           "index$": 2
@@ -126,7 +126,7 @@ class Config {
         },
         {
           "active": true,
-          "name": "public_key",
+          "name": "publicKey",
           "req": false,
           "type": "`$STRING`",
           "index$": 10
@@ -141,6 +141,7 @@ class Config {
             {
               "active": true,
               "args": {},
+              "kind": "http",
               "method": "GET",
               "orig": "/api/extension/servers",
               "parts": [
@@ -151,7 +152,7 @@ class Config {
               "select": {},
               "transform": {
                 "req": "`reqdata`",
-                "res": "`body`"
+                "res": "`body.servers`"
               },
               "index$": 0
             }

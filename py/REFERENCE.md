@@ -89,7 +89,7 @@ server = client.Server()
 | --- | --- | --- | --- |
 | `city` | `str` | No |  |
 | `country` | `str` | No |  |
-| `country_code` | `str` | No |  |
+| `countryCode` | `str` | No |  |
 | `id` | `str` | No |  |
 | `ip` | `str` | No |  |
 | `load` | `float` | No |  |
@@ -97,7 +97,7 @@ server = client.Server()
 | `port` | `int` | No |  |
 | `premium` | `bool` | No |  |
 | `protocol` | `str` | No |  |
-| `public_key` | `str` | No |  |
+| `publicKey` | `str` | No |  |
 
 ### Operations
 

@@ -95,7 +95,7 @@ server = client.Server
 | --- | --- | --- | --- |
 | `city` | `String` | No |  |
 | `country` | `String` | No |  |
-| `country_code` | `String` | No |  |
+| `countryCode` | `String` | No |  |
 | `id` | `String` | No |  |
 | `ip` | `String` | No |  |
 | `load` | `Float` | No |  |
@@ -103,7 +103,7 @@ server = client.Server
 | `port` | `Integer` | No |  |
 | `premium` | `Boolean` | No |  |
 | `protocol` | `String` | No |  |
-| `public_key` | `String` | No |  |
+| `publicKey` | `String` | No |  |
 
 ### Operations
 

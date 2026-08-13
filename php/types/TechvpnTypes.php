@@ -17,7 +17,7 @@ class Server
 {
     public ?string $city = null;
     public ?string $country = null;
-    public ?string $country_code = null;
+    public ?string $countryCode = null;
     public ?string $id = null;
     public ?string $ip = null;
     public ?float $load = null;
@@ -25,7 +25,7 @@ class Server
     public ?int $port = null;
     public ?bool $premium = null;
     public ?string $protocol = null;
-    public ?string $public_key = null;
+    public ?string $publicKey = null;
 }
 
 /** Request payload for Server#list. */
@@ -33,7 +33,7 @@ class ServerListMatch
 {
     public ?string $city = null;
     public ?string $country = null;
-    public ?string $country_code = null;
+    public ?string $countryCode = null;
     public ?string $id = null;
     public ?string $ip = null;
     public ?float $load = null;
@@ -41,6 +41,6 @@ class ServerListMatch
     public ?int $port = null;
     public ?bool $premium = null;
     public ?string $protocol = null;
-    public ?string $public_key = null;
+    public ?string $publicKey = null;
 }
 

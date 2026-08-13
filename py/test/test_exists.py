@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Techvpn SDK exists test
 
 import pytest
 from techvpn_sdk import TechvpnSDK

@@ -23,6 +23,7 @@ require_once __DIR__ . '/MakeUrl.php';
 require_once __DIR__ . '/Param.php';
 require_once __DIR__ . '/PrepareAuth.php';
 require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
 require_once __DIR__ . '/PrepareHeaders.php';
 require_once __DIR__ . '/PrepareMethod.php';
 require_once __DIR__ . '/PrepareParams.php';
@@ -59,6 +60,8 @@ TechvpnUtility::setRegistrar(function (TechvpnUtility $u): void {
     $u->prepare_params = [TechvpnPrepareParams::class, 'call'];
     $u->prepare_path = [TechvpnPreparePath::class, 'call'];
     $u->prepare_query = [TechvpnPrepareQuery::class, 'call'];
+    $u->graphql_body = [TechvpnGraphql::class, 'body'];
+    $u->graphql_errors = [TechvpnGraphql::class, 'errors'];
     $u->result_basic = [TechvpnResultBasic::class, 'call'];
     $u->result_body = [TechvpnResultBody::class, 'call'];
     $u->result_headers = [TechvpnResultHeaders::class, 'call'];

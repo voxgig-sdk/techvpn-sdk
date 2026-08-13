@@ -125,7 +125,8 @@ Create a mock client for unit testing — no server required:
 ```php
 $client = TechvpnSDK::test();
 
-// Entity ops return the bare mock record (throws on error).
+// Entity ops return the ENTITY (throws on error);
+// call data_get() for the mock record.
 $server = $client->Server()->list();
 print_r($server);
 ```
@@ -224,7 +225,7 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return the bare result data (an `array` for single-entity
+Entity operations return the ENTITY (call data_get() for the record) (an `array` for single-entity
 ops, a `list` for `list`) and throw on error. Wrap calls in
 `try`/`catch` to handle failures.
 
@@ -248,7 +249,7 @@ On error, `ok` is `false` and `$err` contains the error value.
 | --- | --- |
 | `city` |  |
 | `country` |  |
-| `country_code` |  |
+| `countryCode` |  |
 | `id` |  |
 | `ip` |  |
 | `load` |  |
@@ -256,7 +257,7 @@ On error, `ok` is `false` and `$err` contains the error value.
 | `port` |  |
 | `premium` |  |
 | `protocol` |  |
-| `public_key` |  |
+| `publicKey` |  |
 
 Operations: List.
 
@@ -283,7 +284,7 @@ Create an instance: `$server = $client->Server();`
 | --- | --- | --- |
 | `city` | `string` |  |
 | `country` | `string` |  |
-| `country_code` | `string` |  |
+| `countryCode` | `string` |  |
 | `id` | `string` |  |
 | `ip` | `string` |  |
 | `load` | `float` |  |
@@ -291,7 +292,7 @@ Create an instance: `$server = $client->Server();`
 | `port` | `int` |  |
 | `premium` | `bool` |  |
 | `protocol` | `string` |  |
-| `public_key` | `string` |  |
+| `publicKey` | `string` |  |
 
 #### Example: List
 

@@ -118,7 +118,7 @@ const server = client.Server()
 | --- | --- | --- | --- |
 | `city` | `string` | No |  |
 | `country` | `string` | No |  |
-| `country_code` | `string` | No |  |
+| `countryCode` | `string` | No |  |
 | `id` | `string` | No |  |
 | `ip` | `string` | No |  |
 | `load` | `number` | No |  |
@@ -126,7 +126,7 @@ const server = client.Server()
 | `port` | `number` | No |  |
 | `premium` | `boolean` | No |  |
 | `protocol` | `string` | No |  |
-| `public_key` | `string` | No |  |
+| `publicKey` | `string` | No |  |
 
 ### Operations
 

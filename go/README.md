@@ -262,7 +262,7 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 | --- | --- |
 | `"city"` |  |
 | `"country"` |  |
-| `"country_code"` |  |
+| `"countryCode"` |  |
 | `"id"` |  |
 | `"ip"` |  |
 | `"load"` |  |
@@ -270,7 +270,7 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 | `"port"` |  |
 | `"premium"` |  |
 | `"protocol"` |  |
-| `"public_key"` |  |
+| `"publicKey"` |  |
 
 Operations: List.
 
@@ -297,7 +297,7 @@ Create an instance: `server := client.Server(nil)`
 | --- | --- | --- |
 | `city` | `string` |  |
 | `country` | `string` |  |
-| `country_code` | `string` |  |
+| `countryCode` | `string` |  |
 | `id` | `string` |  |
 | `ip` | `string` |  |
 | `load` | `float64` |  |
@@ -305,7 +305,7 @@ Create an instance: `server := client.Server(nil)`
 | `port` | `int` |  |
 | `premium` | `bool` |  |
 | `protocol` | `string` |  |
-| `public_key` | `string` |  |
+| `publicKey` | `string` |  |
 
 #### Example: List
 

@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from techvpn_sdk.utility.voxgig_struct import voxgig_struct as vs
 from techvpn_sdk import TechvpnSDK
-from core import helpers
+from techvpn_sdk.core import helpers
 from test import runner
 
 

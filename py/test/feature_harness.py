@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import TechvpnControl
-from core.error import TechvpnError
-from core.result import TechvpnResult
-from core.spec import TechvpnSpec
+from techvpn_sdk.config import make_config
+from techvpn_sdk.features import _make_feature
+from techvpn_sdk.core.control import TechvpnControl
+from techvpn_sdk.core.error import TechvpnError
+from techvpn_sdk.core.result import TechvpnResult
+from techvpn_sdk.core.spec import TechvpnSpec
 
 
 # True when this SDK was generated with the named feature.

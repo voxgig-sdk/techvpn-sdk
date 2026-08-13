@@ -9,7 +9,7 @@
 ---@class Server
 ---@field city? string
 ---@field country? string
----@field country_code? string
+---@field countryCode? string
 ---@field id? string
 ---@field ip? string
 ---@field load? number
@@ -17,12 +17,12 @@
 ---@field port? number
 ---@field premium? boolean
 ---@field protocol? string
----@field public_key? string
+---@field publicKey? string
 
 ---@class ServerListMatch
 ---@field city? string
 ---@field country? string
----@field country_code? string
+---@field countryCode? string
 ---@field id? string
 ---@field ip? string
 ---@field load? number
@@ -30,7 +30,7 @@
 ---@field port? number
 ---@field premium? boolean
 ---@field protocol? string
----@field public_key? string
+---@field publicKey? string
 
 local M = {}
 

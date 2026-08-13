@@ -124,7 +124,8 @@ Create a mock client for unit testing — no server required:
 ```python
 client = TechvpnSDK.test()
 
-# Entity ops return the bare record and raise on error.
+# Entity ops return the ENTITY and raises on error;
+# call data_get() for the record.
 server = client.Server().list()
 # server contains the mock response record
 ```
@@ -220,7 +221,7 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return the bare result data (a `dict` for single-entity
+Entity operations return the ENTITY (call data_get() for the record) (a `dict` for single-entity
 ops, a `list` for `list`) and raise on error. Wrap calls in
 `try`/`except` to handle failures.
 
@@ -244,7 +245,7 @@ On error, `ok` is `False` and `err` contains the error value.
 | --- | --- |
 | `city` |  |
 | `country` |  |
-| `country_code` |  |
+| `countryCode` |  |
 | `id` |  |
 | `ip` |  |
 | `load` |  |
@@ -252,7 +253,7 @@ On error, `ok` is `False` and `err` contains the error value.
 | `port` |  |
 | `premium` |  |
 | `protocol` |  |
-| `public_key` |  |
+| `publicKey` |  |
 
 Operations: List.
 
@@ -279,7 +280,7 @@ Create an instance: `server = client.Server()`
 | --- | --- | --- |
 | `city` | `str` |  |
 | `country` | `str` |  |
-| `country_code` | `str` |  |
+| `countryCode` | `str` |  |
 | `id` | `str` |  |
 | `ip` | `str` |  |
 | `load` | `float` |  |
@@ -287,7 +288,7 @@ Create an instance: `server = client.Server()`
 | `port` | `int` |  |
 | `premium` | `bool` |  |
 | `protocol` | `str` |  |
-| `public_key` | `str` |  |
+| `publicKey` | `str` |  |
 
 #### Example: List
 

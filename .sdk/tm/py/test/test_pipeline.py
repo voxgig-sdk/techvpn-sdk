@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import TechvpnSDK
-from core.error import TechvpnError
-from core.result import TechvpnResult
-from core.response import TechvpnResponse
-from core.spec import TechvpnSpec
-from feature.base_feature import TechvpnBaseFeature
+from projectname_sdk.core.error import TechvpnError
+from projectname_sdk.core.result import TechvpnResult
+from projectname_sdk.core.response import TechvpnResponse
+from projectname_sdk.core.spec import TechvpnSpec
+from projectname_sdk.feature.base_feature import TechvpnBaseFeature
 
 
 def _client():

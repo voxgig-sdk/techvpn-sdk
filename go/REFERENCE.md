@@ -100,7 +100,7 @@ fmt.Println(server.GetName()) // "server"
 | --- | --- | --- | --- |
 | `city` | `string` | No |  |
 | `country` | `string` | No |  |
-| `country_code` | `string` | No |  |
+| `countryCode` | `string` | No |  |
 | `id` | `string` | No |  |
 | `ip` | `string` | No |  |
 | `load` | `float64` | No |  |
@@ -108,7 +108,7 @@ fmt.Println(server.GetName()) // "server"
 | `port` | `int` | No |  |
 | `premium` | `bool` | No |  |
 | `protocol` | `string` | No |  |
-| `public_key` | `string` | No |  |
+| `publicKey` | `string` | No |  |
 
 ### Operations
 

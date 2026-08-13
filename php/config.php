@@ -46,7 +46,7 @@ class TechvpnConfig
             ],
             [
               'active' => true,
-              'name' => 'country_code',
+              'name' => 'countryCode',
               'req' => false,
               'type' => '`$STRING`',
               'index$' => 2,
@@ -102,7 +102,7 @@ class TechvpnConfig
             ],
             [
               'active' => true,
-              'name' => 'public_key',
+              'name' => 'publicKey',
               'req' => false,
               'type' => '`$STRING`',
               'index$' => 10,
@@ -117,6 +117,7 @@ class TechvpnConfig
                 [
                   'active' => true,
                   'args' => [],
+                  'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/api/extension/servers',
                   'parts' => [
@@ -127,7 +128,7 @@ class TechvpnConfig
                   'select' => [],
                   'transform' => [
                     'req' => '`reqdata`',
-                    'res' => '`body`',
+                    'res' => '`body.servers`',
                   ],
                   'index$' => 0,
                 ],

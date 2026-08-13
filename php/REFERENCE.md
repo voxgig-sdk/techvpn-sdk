@@ -94,7 +94,7 @@ $server = $client->Server();
 | --- | --- | --- | --- |
 | `city` | `string` | No |  |
 | `country` | `string` | No |  |
-| `country_code` | `string` | No |  |
+| `countryCode` | `string` | No |  |
 | `id` | `string` | No |  |
 | `ip` | `string` | No |  |
 | `load` | `float` | No |  |
@@ -102,7 +102,7 @@ $server = $client->Server();
 | `port` | `int` | No |  |
 | `premium` | `bool` | No |  |
 | `protocol` | `string` | No |  |
-| `public_key` | `string` | No |  |
+| `publicKey` | `string` | No |  |
 
 ### Operations
 

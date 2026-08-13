@@ -8,7 +8,7 @@
 export interface Server {
   city?: string
   country?: string
-  country_code?: string
+  countryCode?: string
   id?: string
   ip?: string
   load?: number
@@ -16,13 +16,13 @@ export interface Server {
   port?: number
   premium?: boolean
   protocol?: string
-  public_key?: string
+  publicKey?: string
 }
 
 export interface ServerListMatch {
   city?: string
   country?: string
-  country_code?: string
+  countryCode?: string
   id?: string
   ip?: string
   load?: number
@@ -30,6 +30,6 @@ export interface ServerListMatch {
   port?: number
   premium?: boolean
   protocol?: string
-  public_key?: string
+  publicKey?: string
 }
 

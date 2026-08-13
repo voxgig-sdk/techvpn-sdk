@@ -63,7 +63,7 @@ describe('ServerEntity', async () => {
     const server_ref01_ent = client.Server()
     const server_ref01_match: any = {}
 
-    const server_ref01_list = await server_ref01_ent.list(server_ref01_match)
+    const server_ref01_list = (await server_ref01_ent.list(server_ref01_match)).map((e: any) => e.data())
 
 
   })

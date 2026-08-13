@@ -40,7 +40,7 @@ local function make_config()
           },
           {
             ["active"] = true,
-            ["name"] = "country_code",
+            ["name"] = "countryCode",
             ["req"] = false,
             ["type"] = "`$STRING`",
             ["index$"] = 2,
@@ -96,7 +96,7 @@ local function make_config()
           },
           {
             ["active"] = true,
-            ["name"] = "public_key",
+            ["name"] = "publicKey",
             ["req"] = false,
             ["type"] = "`$STRING`",
             ["index$"] = 10,
@@ -111,6 +111,7 @@ local function make_config()
               {
                 ["active"] = true,
                 ["args"] = {},
+                ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/api/extension/servers",
                 ["parts"] = {
@@ -121,7 +122,7 @@ local function make_config()
                 ["select"] = {},
                 ["transform"] = {
                   ["req"] = "`reqdata`",
-                  ["res"] = "`body`",
+                  ["res"] = "`body.servers`",
                 },
                 ["index$"] = 0,
               },
