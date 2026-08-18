@@ -40,7 +40,7 @@ class TechvpnSDK
         $utility = new TechvpnUtility();
         $this->_utility = $utility;
 
-        $config = TechvpnConfig::make_config();
+        $config = TechvpnConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

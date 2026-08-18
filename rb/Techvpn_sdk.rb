@@ -28,7 +28,7 @@ class TechvpnSDK
     utility = TechvpnUtility.new
     @_utility = utility
 
-    config = TechvpnConfig.make_config
+    config = TechvpnConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

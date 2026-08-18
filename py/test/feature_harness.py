@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from techvpn_sdk.config import make_config
+from techvpn_sdk.config import shared_config
 from techvpn_sdk.features import _make_feature
 from techvpn_sdk.core.control import TechvpnControl
 from techvpn_sdk.core.error import TechvpnError
@@ -24,7 +24,7 @@ from techvpn_sdk.core.spec import TechvpnSpec
 
 # True when this SDK was generated with the named feature.
 def has_feature(name):
-    feature = make_config().get("feature")
+    feature = shared_config().get("feature")
     return isinstance(feature, dict) and feature.get(name) is not None
 
 
