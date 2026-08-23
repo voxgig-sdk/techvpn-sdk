@@ -231,17 +231,17 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `city` |  |
-| `country` |  |
-| `countryCode` |  |
-| `id` |  |
-| `ip` |  |
-| `load` |  |
-| `name` |  |
-| `port` |  |
-| `premium` |  |
-| `protocol` |  |
-| `publicKey` |  |
+| `city` | City where the server is located |
+| `country` | Country where the server is located |
+| `countryCode` | ISO country code |
+| `id` | Unique identifier for the server |
+| `ip` | Server IP address |
+| `load` | Current server load percentage |
+| `name` | Display name of the server |
+| `port` | Server port number |
+| `premium` | Whether the server requires premium access |
+| `protocol` | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | Public key for WireGuard connection |
 
 Operations: List.
 
@@ -266,17 +266,17 @@ Create an instance: `local server = client:Server(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `city` | `string` |  |
-| `country` | `string` |  |
-| `countryCode` | `string` |  |
-| `id` | `string` |  |
-| `ip` | `string` |  |
-| `load` | `number` |  |
-| `name` | `string` |  |
-| `port` | `number` |  |
-| `premium` | `boolean` |  |
-| `protocol` | `string` |  |
-| `publicKey` | `string` |  |
+| `city` | `string` | City where the server is located |
+| `country` | `string` | Country where the server is located |
+| `countryCode` | `string` | ISO country code |
+| `id` | `string` | Unique identifier for the server |
+| `ip` | `string` | Server IP address |
+| `load` | `number` | Current server load percentage |
+| `name` | `string` | Display name of the server |
+| `port` | `number` | Server port number |
+| `premium` | `boolean` | Whether the server requires premium access |
+| `protocol` | `string` | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `string` | Public key for WireGuard connection |
 
 #### Example: List
 

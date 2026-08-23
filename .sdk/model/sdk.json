@@ -36,66 +36,77 @@
               "active": true,
               "name": "city",
               "req": false,
+              "short": "City where the server is located",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "country",
               "req": false,
+              "short": "Country where the server is located",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "countryCode",
               "req": false,
+              "short": "ISO country code",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "id",
               "req": false,
+              "short": "Unique identifier for the server",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "ip",
               "req": false,
+              "short": "Server IP address",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "load",
               "req": false,
+              "short": "Current server load percentage",
               "type": "`$NUMBER`"
             },
             {
               "active": true,
               "name": "name",
               "req": false,
+              "short": "Display name of the server",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "port",
               "req": false,
+              "short": "Server port number",
               "type": "`$INTEGER`"
             },
             {
               "active": true,
               "name": "premium",
               "req": false,
+              "short": "Whether the server requires premium access",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "protocol",
               "req": false,
+              "short": "VPN protocol used (e.g., WireGuard)",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "publicKey",
               "req": false,
+              "short": "Public key for WireGuard connection",
               "type": "`$STRING`"
             }
           ],

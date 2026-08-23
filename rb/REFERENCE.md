@@ -93,17 +93,17 @@ server = client.Server
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `city` | `String` | No |  |
-| `country` | `String` | No |  |
-| `countryCode` | `String` | No |  |
-| `id` | `String` | No |  |
-| `ip` | `String` | No |  |
-| `load` | `Float` | No |  |
-| `name` | `String` | No |  |
-| `port` | `Integer` | No |  |
-| `premium` | `Boolean` | No |  |
-| `protocol` | `String` | No |  |
-| `publicKey` | `String` | No |  |
+| `city` | `String` | No | City where the server is located |
+| `country` | `String` | No | Country where the server is located |
+| `countryCode` | `String` | No | ISO country code |
+| `id` | `String` | No | Unique identifier for the server |
+| `ip` | `String` | No | Server IP address |
+| `load` | `Float` | No | Current server load percentage |
+| `name` | `String` | No | Display name of the server |
+| `port` | `Integer` | No | Server port number |
+| `premium` | `Boolean` | No | Whether the server requires premium access |
+| `protocol` | `String` | No | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `String` | No | Public key for WireGuard connection |
 
 ### Operations
 

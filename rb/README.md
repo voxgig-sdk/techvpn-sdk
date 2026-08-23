@@ -237,17 +237,17 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `city` |  |
-| `country` |  |
-| `countryCode` |  |
-| `id` |  |
-| `ip` |  |
-| `load` |  |
-| `name` |  |
-| `port` |  |
-| `premium` |  |
-| `protocol` |  |
-| `publicKey` |  |
+| `city` | City where the server is located |
+| `country` | Country where the server is located |
+| `countryCode` | ISO country code |
+| `id` | Unique identifier for the server |
+| `ip` | Server IP address |
+| `load` | Current server load percentage |
+| `name` | Display name of the server |
+| `port` | Server port number |
+| `premium` | Whether the server requires premium access |
+| `protocol` | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | Public key for WireGuard connection |
 
 Operations: List.
 
@@ -272,17 +272,17 @@ Create an instance: `server = client.Server`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `city` | `String` |  |
-| `country` | `String` |  |
-| `countryCode` | `String` |  |
-| `id` | `String` |  |
-| `ip` | `String` |  |
-| `load` | `Float` |  |
-| `name` | `String` |  |
-| `port` | `Integer` |  |
-| `premium` | `Boolean` |  |
-| `protocol` | `String` |  |
-| `publicKey` | `String` |  |
+| `city` | `String` | City where the server is located |
+| `country` | `String` | Country where the server is located |
+| `countryCode` | `String` | ISO country code |
+| `id` | `String` | Unique identifier for the server |
+| `ip` | `String` | Server IP address |
+| `load` | `Float` | Current server load percentage |
+| `name` | `String` | Display name of the server |
+| `port` | `Integer` | Server port number |
+| `premium` | `Boolean` | Whether the server requires premium access |
+| `protocol` | `String` | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `String` | Public key for WireGuard connection |
 
 #### Example: List
 

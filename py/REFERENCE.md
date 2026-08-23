@@ -87,17 +87,17 @@ server = client.Server()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `city` | `str` | No |  |
-| `country` | `str` | No |  |
-| `countryCode` | `str` | No |  |
-| `id` | `str` | No |  |
-| `ip` | `str` | No |  |
-| `load` | `float` | No |  |
-| `name` | `str` | No |  |
-| `port` | `int` | No |  |
-| `premium` | `bool` | No |  |
-| `protocol` | `str` | No |  |
-| `publicKey` | `str` | No |  |
+| `city` | `str` | No | City where the server is located |
+| `country` | `str` | No | Country where the server is located |
+| `countryCode` | `str` | No | ISO country code |
+| `id` | `str` | No | Unique identifier for the server |
+| `ip` | `str` | No | Server IP address |
+| `load` | `float` | No | Current server load percentage |
+| `name` | `str` | No | Display name of the server |
+| `port` | `int` | No | Server port number |
+| `premium` | `bool` | No | Whether the server requires premium access |
+| `protocol` | `str` | No | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `str` | No | Public key for WireGuard connection |
 
 ### Operations
 

@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "Techvpn",
+			"slug": "techvpn",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -33,46 +36,57 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "city",
+						"short": "City where the server is located",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "country",
+						"short": "Country where the server is located",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "countryCode",
+						"short": "ISO country code",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "id",
+						"short": "Unique identifier for the server",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "ip",
+						"short": "Server IP address",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "load",
+						"short": "Current server load percentage",
 						"type": "`$NUMBER`",
 					},
 					map[string]any{
 						"name": "name",
+						"short": "Display name of the server",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "port",
+						"short": "Server port number",
 						"type": "`$INTEGER`",
 					},
 					map[string]any{
 						"name": "premium",
+						"short": "Whether the server requires premium access",
 						"type": "`$BOOLEAN`",
 					},
 					map[string]any{
 						"name": "protocol",
+						"short": "VPN protocol used (e.g., WireGuard)",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "publicKey",
+						"short": "Public key for WireGuard connection",
 						"type": "`$STRING`",
 					},
 				},

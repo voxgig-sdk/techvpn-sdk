@@ -92,17 +92,17 @@ $server = $client->Server();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `city` | `string` | No |  |
-| `country` | `string` | No |  |
-| `countryCode` | `string` | No |  |
-| `id` | `string` | No |  |
-| `ip` | `string` | No |  |
-| `load` | `float` | No |  |
-| `name` | `string` | No |  |
-| `port` | `int` | No |  |
-| `premium` | `bool` | No |  |
-| `protocol` | `string` | No |  |
-| `publicKey` | `string` | No |  |
+| `city` | `string` | No | City where the server is located |
+| `country` | `string` | No | Country where the server is located |
+| `countryCode` | `string` | No | ISO country code |
+| `id` | `string` | No | Unique identifier for the server |
+| `ip` | `string` | No | Server IP address |
+| `load` | `float` | No | Current server load percentage |
+| `name` | `string` | No | Display name of the server |
+| `port` | `int` | No | Server port number |
+| `premium` | `bool` | No | Whether the server requires premium access |
+| `protocol` | `string` | No | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `string` | No | Public key for WireGuard connection |
 
 ### Operations
 

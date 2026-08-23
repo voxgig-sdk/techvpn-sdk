@@ -6,7 +6,7 @@ The Golang SDK for the Techvpn API — an entity-oriented client using standard 
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.Server(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,17 +260,17 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"city"` |  |
-| `"country"` |  |
-| `"countryCode"` |  |
-| `"id"` |  |
-| `"ip"` |  |
-| `"load"` |  |
-| `"name"` |  |
-| `"port"` |  |
-| `"premium"` |  |
-| `"protocol"` |  |
-| `"publicKey"` |  |
+| `"city"` | City where the server is located |
+| `"country"` | Country where the server is located |
+| `"countryCode"` | ISO country code |
+| `"id"` | Unique identifier for the server |
+| `"ip"` | Server IP address |
+| `"load"` | Current server load percentage |
+| `"name"` | Display name of the server |
+| `"port"` | Server port number |
+| `"premium"` | Whether the server requires premium access |
+| `"protocol"` | VPN protocol used (e.g., WireGuard) |
+| `"publicKey"` | Public key for WireGuard connection |
 
 Operations: List.
 
@@ -295,17 +295,17 @@ Create an instance: `server := client.Server(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `city` | `string` |  |
-| `country` | `string` |  |
-| `countryCode` | `string` |  |
-| `id` | `string` |  |
-| `ip` | `string` |  |
-| `load` | `float64` |  |
-| `name` | `string` |  |
-| `port` | `int` |  |
-| `premium` | `bool` |  |
-| `protocol` | `string` |  |
-| `publicKey` | `string` |  |
+| `city` | `string` | City where the server is located |
+| `country` | `string` | Country where the server is located |
+| `countryCode` | `string` | ISO country code |
+| `id` | `string` | Unique identifier for the server |
+| `ip` | `string` | Server IP address |
+| `load` | `float64` | Current server load percentage |
+| `name` | `string` | Display name of the server |
+| `port` | `int` | Server port number |
+| `premium` | `bool` | Whether the server requires premium access |
+| `protocol` | `string` | VPN protocol used (e.g., WireGuard) |
+| `publicKey` | `string` | Public key for WireGuard connection |
 
 #### Example: List
 

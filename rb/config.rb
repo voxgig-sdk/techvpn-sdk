@@ -19,6 +19,9 @@ module TechvpnConfig
     {
       "main" => {
         "name" => "Techvpn",
+        "slug" => "techvpn",
+        "version" => "0.0.1",
+        "target" => "rb",
       },
       "feature" => {
         "test" => {
@@ -41,46 +44,57 @@ module TechvpnConfig
           "fields" => [
             {
               "name" => "city",
+              "short" => "City where the server is located",
               "type" => "`$STRING`",
             },
             {
               "name" => "country",
+              "short" => "Country where the server is located",
               "type" => "`$STRING`",
             },
             {
               "name" => "countryCode",
+              "short" => "ISO country code",
               "type" => "`$STRING`",
             },
             {
               "name" => "id",
+              "short" => "Unique identifier for the server",
               "type" => "`$STRING`",
             },
             {
               "name" => "ip",
+              "short" => "Server IP address",
               "type" => "`$STRING`",
             },
             {
               "name" => "load",
+              "short" => "Current server load percentage",
               "type" => "`$NUMBER`",
             },
             {
               "name" => "name",
+              "short" => "Display name of the server",
               "type" => "`$STRING`",
             },
             {
               "name" => "port",
+              "short" => "Server port number",
               "type" => "`$INTEGER`",
             },
             {
               "name" => "premium",
+              "short" => "Whether the server requires premium access",
               "type" => "`$BOOLEAN`",
             },
             {
               "name" => "protocol",
+              "short" => "VPN protocol used (e.g., WireGuard)",
               "type" => "`$STRING`",
             },
             {
               "name" => "publicKey",
+              "short" => "Public key for WireGuard connection",
               "type" => "`$STRING`",
             },
           ],

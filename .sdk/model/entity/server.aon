@@ -8,56 +8,67 @@ main: kit: entity: server: {
     {
       name: "city"
       req: false
+      short: "City where the server is located"
       type: "`$STRING`"
     }
     {
       name: "country"
       req: false
+      short: "Country where the server is located"
       type: "`$STRING`"
     }
     {
       name: "countryCode"
       req: false
+      short: "ISO country code"
       type: "`$STRING`"
     }
     {
       name: "id"
       req: false
+      short: "Unique identifier for the server"
       type: "`$STRING`"
     }
     {
       name: "ip"
       req: false
+      short: "Server IP address"
       type: "`$STRING`"
     }
     {
       name: "load"
       req: false
+      short: "Current server load percentage"
       type: "`$NUMBER`"
     }
     {
       name: "name"
       req: false
+      short: "Display name of the server"
       type: "`$STRING`"
     }
     {
       name: "port"
       req: false
+      short: "Server port number"
       type: "`$INTEGER`"
     }
     {
       name: "premium"
       req: false
+      short: "Whether the server requires premium access"
       type: "`$BOOLEAN`"
     }
     {
       name: "protocol"
       req: false
+      short: "VPN protocol used (e.g., WireGuard)"
       type: "`$STRING`"
     }
     {
       name: "publicKey"
       req: false
+      short: "Public key for WireGuard connection"
       type: "`$STRING`"
     }
   ]
