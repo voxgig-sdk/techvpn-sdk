@@ -86,10 +86,16 @@ main: kit: entity: server: {
         {
           method: "GET"
           orig: "/api/extension/servers"
-          parts: [
-            "api"
-            "extension"
-            "servers"
+          segments: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "extension"
+            }
+            {
+              lit: "servers"
+            }
           ]
           transform: {
             req: "`reqdata`"

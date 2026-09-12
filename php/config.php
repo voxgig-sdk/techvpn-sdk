@@ -113,6 +113,10 @@ class TechvpnConfig
               'type' => '`$STRING`',
             ],
           ],
+          'id' => [
+            'field' => 'id',
+            'name' => 'id',
+          ],
           'name' => 'server',
           'op' => [
             'list' => [
@@ -124,15 +128,26 @@ class TechvpnConfig
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/api/extension/servers',
-                  'parts' => [
-                    'api',
-                    'extension',
-                    'servers',
+                  'segments' => [
+                    [
+                      'lit' => 'api',
+                    ],
+                    [
+                      'lit' => 'extension',
+                    ],
+                    [
+                      'lit' => 'servers',
+                    ],
                   ],
                   'select' => [],
                   'transform' => [
                     'req' => '`reqdata`',
                     'res' => '`body.servers`',
+                  ],
+                  'parts' => [
+                    'api',
+                    'extension',
+                    'servers',
                   ],
                 ],
               ],
