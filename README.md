@@ -105,7 +105,7 @@ local results, err = client:Server():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
+| TypeScript | `@voxgig-sdk/techvpn-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
 | Python | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
 | PHP | `voxgig-sdk/techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/techvpn-sdk/go` | `go get github.com/voxgig-sdk/techvpn-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:Server():list()
 ### TypeScript
 
 ```ts
-import { TechvpnSDK } from '@voxgig-sdk/techvpn'
+import { TechvpnSDK } from '@voxgig-sdk/techvpn-sdk'
 
 const client = new TechvpnSDK()
 

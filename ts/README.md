@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { TechvpnSDK } from '@voxgig-sdk/techvpn'
+import { TechvpnSDK } from '@voxgig-sdk/techvpn-sdk'
 
 const client = new TechvpnSDK()
 ```
@@ -423,7 +423,7 @@ techvpn/
 Import the SDK from the package root:
 
 ```ts
-import { TechvpnSDK } from '@voxgig-sdk/techvpn'
+import { TechvpnSDK } from '@voxgig-sdk/techvpn-sdk'
 ```
 
 ### Entity state
