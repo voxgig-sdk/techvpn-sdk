@@ -84,6 +84,12 @@ main: kit: entity: server: {
       name: "list"
       points: [
         {
+          contract: {
+            id: "GET /api/extension/servers"
+            json: "{\"operationId\":\"getProxyList\",\"parameters\":[],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"servers\":{\"items\":{\"properties\":{\"city\":{\"description\":\"City where the server is located\",\"type\":\"string\"},\"country\":{\"description\":\"Country where the server is located\",\"type\":\"string\"},\"countryCode\":{\"description\":\"ISO country code\",\"type\":\"string\"},\"id\":{\"description\":\"Unique identifier for the server\",\"type\":\"string\"},\"ip\":{\"description\":\"Server IP address\",\"type\":\"string\"},\"load\":{\"description\":\"Current server load percentage\",\"type\":\"number\"},\"name\":{\"description\":\"Display name of the server\",\"type\":\"string\"},\"port\":{\"description\":\"Server port number\",\"type\":\"integer\"},\"premium\":{\"description\":\"Whether the server requires premium access\",\"type\":\"boolean\"},\"protocol\":{\"description\":\"VPN protocol used (e.g., WireGuard)\",\"example\":\"WireGuard\",\"type\":\"string\"},\"publicKey\":{\"description\":\"Public key for WireGuard connection\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successfully retrieved proxy server list\"},\"400\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Bad request - Invalid parameters\"},\"500\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Internal server error\"},\"503\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Service unavailable\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/api/extension/servers"
           segments: [

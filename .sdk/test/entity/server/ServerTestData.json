@@ -9,7 +9,7 @@
         "ip": "s72",
         "load": 115,
         "name": "s74",
-        "port": "s75",
+        "port": 117,
         "premium": true,
         "protocol": "s77",
         "publicKey": "s78"
@@ -22,7 +22,7 @@
         "ip": "se0",
         "load": 225,
         "name": "se2",
-        "port": "se3",
+        "port": 227,
         "premium": true,
         "protocol": "se5",
         "publicKey": "se6"
@@ -35,7 +35,7 @@
         "ip": "s14e",
         "load": 335,
         "name": "s150",
-        "port": "s151",
+        "port": 337,
         "premium": true,
         "protocol": "s153",
         "publicKey": "s154"
@@ -51,10 +51,136 @@
         "ip": "s1bc",
         "load": 445,
         "name": "s1be",
-        "port": "s1bf",
+        "port": 447,
         "premium": true,
         "protocol": "s1c1",
         "publicKey": "s1c2"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/extension/servers": {
+      "provenance": "operation-contract",
+      "contract": {
+        "operationId": "getProxyList",
+        "parameters": [],
+        "protocol": "http",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "servers": {
+                      "items": {
+                        "properties": {
+                          "city": {
+                            "description": "City where the server is located",
+                            "type": "string"
+                          },
+                          "country": {
+                            "description": "Country where the server is located",
+                            "type": "string"
+                          },
+                          "countryCode": {
+                            "description": "ISO country code",
+                            "type": "string"
+                          },
+                          "id": {
+                            "description": "Unique identifier for the server",
+                            "type": "string"
+                          },
+                          "ip": {
+                            "description": "Server IP address",
+                            "type": "string"
+                          },
+                          "load": {
+                            "description": "Current server load percentage",
+                            "type": "number"
+                          },
+                          "name": {
+                            "description": "Display name of the server",
+                            "type": "string"
+                          },
+                          "port": {
+                            "description": "Server port number",
+                            "type": "integer"
+                          },
+                          "premium": {
+                            "description": "Whether the server requires premium access",
+                            "type": "boolean"
+                          },
+                          "protocol": {
+                            "description": "VPN protocol used (e.g., WireGuard)",
+                            "example": "WireGuard",
+                            "type": "string"
+                          },
+                          "publicKey": {
+                            "description": "Public key for WireGuard connection",
+                            "type": "string"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successfully retrieved proxy server list"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "error": {
+                      "description": "Error message",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Bad request - Invalid parameters"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "error": {
+                      "description": "Error message",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Internal server error"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "error": {
+                      "description": "Error message",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Service unavailable"
+          }
+        },
+        "securitySource": "unspecified"
       }
     }
   }
