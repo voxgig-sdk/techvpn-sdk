@@ -105,12 +105,12 @@ local results, err = client:Server():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/techvpn-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
-| Python | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
-| PHP | `voxgig-sdk/techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
+| TypeScript | `@voxgig-sdk/techvpn-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/tags) |
+| Python | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/tags) |
+| PHP | `voxgig-sdk/techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/techvpn-sdk/go` | `go get github.com/voxgig-sdk/techvpn-sdk/go@latest` |
-| Ruby | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
-| Lua | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/releases) |
+| Ruby | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/tags) |
+| Lua | `voxgig-sdk-techvpn` | publish pending — [install from git tag](https://github.com/voxgig-sdk/techvpn-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/techvpn-sdk/go-cli` | `go install github.com/voxgig-sdk/techvpn-sdk/go-cli/cmd/techvpn@latest` |
 | Go MCP server | `github.com/voxgig-sdk/techvpn-sdk/go-mcp` | `go get github.com/voxgig-sdk/techvpn-sdk/go-mcp@latest` |
 
